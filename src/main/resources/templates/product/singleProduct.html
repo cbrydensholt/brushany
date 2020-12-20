@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single Product</title>
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Details</h1>
+    <p>Product ID: <span th:text="${product.id}"></span></p>
+    <p>Product Name: <span th:text="${product.name}"></span> </p>
+    <p>Product Producer: <span th:text="${product.producer}"></span></p>
+    <p>Product Price: <span th:text="${product.price}"></span> </p>
+    <p>Product Date: <span th:text="${product.date}"></span> </p>
+    <p>Is active?: <span th:text="${product.active}"></span></p>
+</div>
+</body>
+</html>
+
+</body>
+</html>

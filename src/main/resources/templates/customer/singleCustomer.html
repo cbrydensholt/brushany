@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single Product</title>
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Details</h1>
+    <p>Kunde ID: <span th:text="${customer.customerId}"></span></p>
+    <p>Kunde Navn: <span th:text="${customer.name}"></span> </p>
+    <p>Kunde Email: <span th:text="${customer.email}"></span></p>
+    <p>Kunde Telefon: <span th:text="${customer.phone}"></span> </p>
+    <p>Kunde Adresse: <span th:text="${customer.address}"></span> </p>
+    <p>Kunde CPR?: <span th:text="${customer.cpr}"></span></p>
+</div>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="container">
+
+    <h1>Delete A Snus Product</h1>
+
+    <h1>Choose A Product From The Existing List To Delete</h1>
+
+
+
+    <form action="/deletesubscription" method="post">
+
+        <label for="id">Abonnement ID</label><br>
+        <input type="text" name="id" id="id">
+        <br>
+
+        <button type="submit" name="submit" button class="btn btn-create">Delete</button>
+    </form>
+
+    <table>
+
+    <tr th:each="snus : ${selection}">
+        <td th:text="${product.snusId}"></td>
+        <td th:text="${snus.name}"></td>
+        <td th:text="${snus.brand}"></td>
+        <td th:text="${snus.price}"></td>
+        <td th:text="${snus.strength}">
+        <td th:text="${snus.country}">
+
+    </tr>
+    </table>
+</div>
+
+
+
+
+</body>
+</html>

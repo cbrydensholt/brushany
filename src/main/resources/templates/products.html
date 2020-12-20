@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Start side test med product crud</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h2> Producter</h2>
+
+    <table>
+        <thead class="table table-striped">
+        <tr>
+
+            <th> navn</th>
+            <th> producer</th>
+            <th> pris</th>
+            <th> dato</th>
+            <th> aktiv</th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr scope="row" th:each="product" : ${products}>
+            <td th:each="${products.name}"></td>
+            <td th:each="${products.producer}"></td>
+            <td th:each="${products.price}"></td>
+            <td th:each="${products.date}"></td>
+            <td th:each="${products.active}"></td>
+
+
+
+
+
+        </tr>
+        </tbody>
+
+
+    </table>
+
+</div>
+
+
+</body>
+</html>

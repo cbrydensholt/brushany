@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdater Abonnement</title>
+</head>
+<body>
+
+<h1>Opdater Et Abonnement</h1>
+
+<div class="container">
+
+
+
+    <form action="/updatedsubscription" method="post">
+
+        <label for="id">Abonnement ID</label>
+        <input type="text" name="id" id="id" th:value="${subscription.id}" readonly>
+        <br>
+        <label for="startDate">Start Dato</label>
+        <input type="text" name="startDate" id="startDate" th:value="${subscription.startDate}" >
+        <br>
+        <label for="subscriptionType">Abonnement Type:</label>
+        <input type="text" name="subscriptionType" id="subscriptionType" th:value="${subscription.subscriptionType}" >
+        <br>
+        <label for="customerId">Kunde ID:</label>
+        <input type="text" name="customerId" id="customerId" th:value="${subscription.customerId}" >
+        <br>
+        <label for="productId">Produkt ID:</label>
+        <input type="text" name="productId" id="productId" th:value="${subscription.productId}"  >
+        <br>
+        <label for="active">Aktiv?:</label>
+        <input type="text" name="active" id="active" th:value="${subscription.active}" >
+
+        <button type="submit" name="submit" button class="btn btn-create">Opdater</button>
+    </form>
+</div>
+
+</body>
+</html>

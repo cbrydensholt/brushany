@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{styles.css}" href="../static/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+
+<div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">Kunder
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="/customeroverview">Kunde Oversigt</a>
+            <a href="/createcustomer">Opret Kunde</a>
+        </div>
+
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Produkter
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="/productoverview">Produkt Oversigt</a>
+            <a href="/createproduct">Opret Produkt</a>
+
+        </div>
+
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Abonnementer
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="/subscriptionoverview">Abonnement Oversigt</a>
+            <a href="/createsubscription">Opret Abonemment</a>
+        </div>
+
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Email
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="/sendemail">Send Email</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
